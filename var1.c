@@ -36,4 +36,6 @@ int main()
              flag=0;
         }
     }
+    if(flag==0)
+        printf("unique");
 }
