@@ -19,15 +19,21 @@ int main()
             }
         }
     }
+    int flag=0;
     for(i=0;i<n-1;i++)
     {
         for(j=i+1;j<n;j++)
         {
+            if(flag==0)
             if(a[i]==a[j])
             {
                 printf("%d ",a[i]);
                 a[i]=0;
+                a[j]=0;
+                flag=1;
             }
+            else
+             flag=0;
         }
     }
 }
